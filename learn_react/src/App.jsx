@@ -5,6 +5,7 @@ import ListPicker from './ListPicker';
 import DiceGame from './DiceGame';
 import SlotMachine from './SlotMachine';
 import Properties from './Properties';
+import Clicker from './Clicker';
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -19,12 +20,13 @@ function App() {
   
   return(
     <>
+   <Clicker message={"Stop it baby."} buttonText={"Dont click me"}/>
    <Dog name="Husky"/>
    <Die sides={12}/>
    <ListPicker arry={[1,2,3]}/>
    <ListPicker arry={["Sujal","Acharya","Sandesh","MacBook"]}/>
    <DiceGame />
-   <SlotMachine icons={["🍒","🍒","🍒",]}/>
+   <SlotMachine icons={["🍒","🍒","🍒",]} />
    <SlotMachine icons={["🍒","🍒","🍌",]}/>
    <Properties properties={properties}/>
    </>
