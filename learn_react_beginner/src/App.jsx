@@ -6,6 +6,10 @@ import DiceGame from './DiceGame';
 import SlotMachine from './SlotMachine';
 import Properties from './Properties';
 import Clicker from './Clicker';
+import Counter from './Counter';
+import Toggler from './Toggler';
+import ColorBox from './ColorBox';
+import ColorBoxList from './ColorBoxList';
 
 const properties = [
   { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
@@ -16,10 +20,52 @@ const properties = [
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
 
+const colors=[
+  "red",
+  "blue",
+  "green",
+  "yellow",
+  "purple",
+  "orange",
+  "pink",
+  "black",
+  "white",
+  "grey",
+  "brown",
+  "cyan",
+  "magenta",
+  "violet",
+  "indigo",
+  "turquoise",
+  "teal",
+  "lavender",
+  "maroon",
+  "olive",
+  "coral",
+  "salmon",
+  "peach",
+  "tan",
+  "khaki",
+  "gold",
+  "silver",
+  "bronze",
+  "platinum",
+  "rose",
+  "ruby",
+  "sapphire",
+  "emerald",
+  "pearl",
+  "diamond",
+  "amethyst"
+]
+
 function App() {
   
   return(
     <>
+    <ColorBoxList colors={colors}/>
+    {/* <Counter/>
+    <Toggler/>
    <Clicker message={"Stop it baby."} buttonText={"Dont click me"}/>
    <Dog name="Husky"/>
    <Die sides={12}/>
@@ -28,7 +74,7 @@ function App() {
    <DiceGame />
    <SlotMachine icons={["🍒","🍒","🍒",]} />
    <SlotMachine icons={["🍒","🍒","🍌",]}/>
-   <Properties properties={properties}/>
+   <Properties properties={properties}/> */}
    </>
    );
 }
