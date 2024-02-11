@@ -4,13 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ScoreKeeper from './ScoreKeeper'
 import EmojiClicker from './EmojiClicker'
+import AdvancedScoreKeeper from './AdvancedScoreKeeper'
 
 function App() {
 
   return (
     <>
-    <EmojiClicker/>
-    <ScoreKeeper/>
+    <AdvancedScoreKeeper numPlayers={4} target ={10}/>
+    <AdvancedScoreKeeper numPlayers={10} target={5}/>
+    {/* <EmojiClicker/>
+    <ScoreKeeper/> */}
     </>
   )
 }
