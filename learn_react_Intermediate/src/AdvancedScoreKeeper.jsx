@@ -14,7 +14,7 @@ export default function AdvancedScoreKeeper({numPlayers=2,target=3}){
         }
 
         const resetScore = ()=>{
-            setScores(new Array(numPlayers).fill(0))
+            setScores(new Array(numPlayers) .fill(0))
         }
 
  return (
