@@ -1,0 +1,7 @@
+.Die{
+    border: 2px solid black;
+    padding: 50px;
+    font-size: 50px;
+    color: black;
+    border-radius: 10px;
+}
