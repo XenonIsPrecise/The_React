@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
+import "./EmojiClicker.css"
 
 export default function EmojiClicker() {
   const [emoji, setEmoji] = useState([{ id: uuidv4(), emoji: "🥹" }]);
@@ -23,7 +24,7 @@ export default function EmojiClicker() {
   return (
     <div>
       {emoji.map((e) => (
-        <span onClick={() => deleteEmoji(e.id)} key={e.id}>
+        <span className="oneEmoji" onClick={() => deleteEmoji(e.id)} key={e.id}>
           {e.emoji}
         </span>
       ))}

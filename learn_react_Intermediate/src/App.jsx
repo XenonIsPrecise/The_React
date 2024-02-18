@@ -12,8 +12,8 @@ function App() {
     <>
     <AdvancedScoreKeeper numPlayers={4} target ={10}/>
     <AdvancedScoreKeeper numPlayers={10} target={5}/>
-    {/* <EmojiClicker/>
-    <ScoreKeeper/> */}
+    <EmojiClicker/>
+    <ScoreKeeper/>
     </>
   )
 }
