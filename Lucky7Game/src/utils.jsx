@@ -16,4 +16,8 @@ function d6() {
     return nums.reduce((prev, cur) => prev + cur, 0);
   }
   
-  export { d6, getRolls, sum };
+function lessThan4(dice){
+    return sum(dice)<4;
+}
+
+  export { d6, getRolls, sum, lessThan4 };
