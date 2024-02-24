@@ -14,7 +14,6 @@ export default function SignUpForm(){
     };
     return(
         <>
-
         <div>
             <label htmlFor="FirstName">Enter your FirstName:</label>
             <input id="FirstName" type="text" name="firstName" value={formData.firstName} onChange={changeData}></input>
@@ -27,6 +26,8 @@ export default function SignUpForm(){
             <label htmlFor="Password">Enter your Password:</label>
             <input id="Password" type="password" name="password" value={formData.password} onChange={changeData}></input>
         </div>
+        <div>Hello: {formData.firstName+formData.lastName}</div>
     </>
+    
     )
 }
