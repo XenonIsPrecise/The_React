@@ -5,13 +5,15 @@ import './App.css'
 import Username from './Username'
 import SignUpForm from './SignUpForm'
 import ShoppingListForm from './ShoppingListForm'
+import ShoppingList from './ShoppingList'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-    <ShoppingListForm/>
+    <ShoppingList />
+    {/* <ShoppingListForm/> */}
     {/* <SignUpForm/>
       <Username/>
       <h1>Hello World</h1> */}
