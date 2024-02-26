@@ -64,6 +64,7 @@ function App() {
   return(
     <>
     <ColorBoxList colors={colors}/>
+    <Counter/>
     {/* <Counter/>
     <Toggler/>
    <Clicker message={"Stop it baby."} buttonText={"Dont click me"}/>
