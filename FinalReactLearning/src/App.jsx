@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from '@mui/material'
+import { Button, CssBaseline } from '@mui/material'
+import ToDoList from './toDoList'
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <>
+    <CssBaseline/>
       <Button variant="contained" onClick={()=>(alert("Hi"))}>Contained</Button>
+      <ToDoList />
     </>
   )
 }
